@@ -1,0 +1,29 @@
+@import "tailwindcss";
+/* Keep navbar and close button above mobile overlay */
+.nav.menu-open {
+  z-index: 90;
+}
+
+.nav.menu-open .hamburger {
+  position: relative;
+  z-index: 100;
+  background: #1c2543;
+  border: 1px solid #dfbb65;
+  width: 46px;
+  height: 46px;
+}
+
+/* Make the close X clearly visible */
+.nav.menu-open .hamburger span {
+  background: #f6dc90;
+  height: 2px;
+  width: 22px;
+}
+.nav.menu-open .hamburger {
+  margin-left: auto;
+}
+@media (max-width: 768px) {
+  .nav.menu-open .brand {
+    display: none;
+  }
+}
